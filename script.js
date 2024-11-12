@@ -278,10 +278,10 @@ document.addEventListener("DOMContentLoaded", () => {
       timestamp: new Date().toISOString(),
     };
 
-    if (!noteData.content) {
-      showToast("Please add some content", "error");
-      return;
-    }
+    // if (!noteData.content) {
+    //   showToast("Please add some content", "error");
+    //   return;
+    // }
 
     notes.unshift(noteData);
     localStorage.setItem("notes", JSON.stringify(notes));
