@@ -104,12 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         : callCount,
     };
 
-    if (
-      !formData.phone ||
-      !formData.name ||
-      !formData.type ||
-      !formData.description
-    ) {
+    if (!formData.phone) {
       showToast("Please fill all fields", "error");
       return;
     }
